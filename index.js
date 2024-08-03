@@ -1,7 +1,7 @@
 // Dynamic typing animation
 
 var typed = new Typed('#element', {
-    strings: ['Lorem ipsum ', 'adipisicing.'],
+    strings: ['Elegance ', 'Precision.'],
     typeSpeed: 50,
     loop: true,
     loopCount: Infinity,
