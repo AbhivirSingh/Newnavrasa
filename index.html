@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navrasa : Where Dreams Transform into Unforgettable Experiences!</title>
+    <link rel="icon" type="image/svg+xml" href="logo.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="logo.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+
+</head>
+
+<body>
+    <img src="/Navrasa images/5.jpg" alt="photo">
+    <header data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
+        <div>
+            <img src="/Assets/logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Modal toggle -->
+        <button id="toggle" data-modal-target="crud-modal" data-modal-toggle="crud-modal"
+            class="block text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center"
+            type="button">
+            Advisory call
+        </button>
+    </header>
+
+    <nav data-aos="fade-down"
+        class="bg-white fixed block sm:hidden top-0 w-full mx-0 md:w-[95vw] md:mx-auto z-50  start-0 border shadow border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="/Assets/logo.png" class="h-8" alt="Logo">
+                <span class="self-center text-2xl font-bold whitespace-nowrap text-gray-800">Navrasa</span>
+            </a>
+            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button data-modal-target="crud-modal" data-modal-toggle="crud-modal"
+                    class="block hidden md:block text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                    type="button">
+                    Consultation call
+                </button>
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-red-100 focus:outline-none focus:ring-2 focus:ring-red-200"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                    <li>
+                        <a href="#"
+                            class="block py-1 text-gray-700 hover:bg-red-200 hover:text-red-700 hover:shadow rounded-xl md:text-red-700 md:py-0 md:px-4"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-1 text-gray-700 hover:bg-red-200 hover:text-red-700 hover:shadow rounded-xl md:text-red-700 md:py-0 md:px-4">About</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-1 text-gray-700 hover:bg-red-200 hover:text-red-700 hover:shadow rounded-xl md:text-red-700 md:py-0 md:px-4">Services</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-1 text-gray-700 hover:bg-red-200 hover:text-red-700 hover:shadow rounded-xl md:text-red-700 md:py-0 md:px-4">Contact</a>
+                    </li>
+                    <button data-modal-target="crud-modal" data-modal-toggle="crud-modal"
+                        class="block md:hidden text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                        type="button">
+                        Consultation call
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="crud-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-md max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-lg font-bold text-gray-900 ">
+                        Get a free consultation call
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-toggle="crud-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <form class="p-4 md:p-5">
+                    <div class="grid gap-4 mb-4 grid-cols-2">
+                        <div class="col-span-2">
+                            <label for="name"
+                                class="block mb-2 text-sm font-medium text-gray-900 ">Name</label>
+                            <input type="text" name="name" id="name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  "
+                                placeholder="Your name" required="">
+                        </div>
+                        <div class="col-span-2 sm:col-span-1">
+                            <label for="price"
+                                class="block mb-2 text-sm font-medium text-gray-900">Eamil</label>
+                            <input type="text" name="price" 
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                                placeholder="Email" required>
+                        </div>
+                        <div class="col-span-2 sm:col-span-1">
+                            <label for="price" class="block mb-2 text-sm font-medium text-gray-900">Contact no.</label>
+                            <input type="number" name="price"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
+                                placeholder="Phone" required>
+                        </div>
+                        <div class="col-span-2">
+                            <label for="description"
+                                class="block mb-2 text-sm font-medium text-gray-900">About your
+                                Query</label>
+                            <textarea id="description" rows="4"
+                                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-red-500 focus:border-red-500"
+                                placeholder="Write product description here"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit"
+                        class="text-white inline-flex items-center bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center ">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="intro">
+        <div data-aos="fade-down" data-aos-delay="1000" data-aos-anchor-placement="center-bottom">
+            Navrasa- Where Dreams Transform into forgettable
+            <span id="element">Seamless Planning</span>
+        </div>
+        <div data-aos="fade-down" data-aos-delay="800" data-aos-anchor-placement="center-bottom"> <b>We At Navrasa</b>
+            craft experiences that resonate
+        </div>
+        <div data-aos="fade-down" data-aos-delay="800" data-aos-anchor-placement="center-bottom">Confusion about what
+            relevant content I mention that is relevant to Wedding or Overall Services.
+        </div>
+        <div>
+            <button data-modal-target="crud-modal" data-modal-toggle="crud-modal"
+                class="block text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-500 font-medium rounded-lg text-xs md:text-lg px-4 md:px-4 md:py-2 py-2 text-center"
+                type="button">
+                Learn more
+            </button>
+        </div>
+    </div>
+
+    <div class="divider">
+        <h3>Wedding Planning</h3>
+        <h3>Corporate Event Management</h3>
+        <h3>Social Gatherings</h3>
+        <h3>Venue Consultation</h3>
+        <h3>Vendor Booking</h3>
+    </div>
+
+
+    <div class="sec1">
+        <img src="/Assets/Flower.svg" alt="Flower">
+        <span data-aos="fade-down">The finest wedding moments made possible</span>
+        <span data-aos="fade-up">At Navrasa, we craft wedding experiences that resonate. We believe in creating
+            ceremonies that leave a lasting impact on your guests and the world around us.
+            We go beyond wedding planning, using the latest technology for seamless, interactive experiences. Our
+            commitment to environmental responsibility ensures that your wedding is both memorable and eco-friendly.
+            Whether you envision a grand celebration or an intimate gathering, our team of experts will bring your
+            vision to life with personalized, tailor-made solutions.
+        </span>
+        <span class="fade-up"><b>Create unforgettable wedding memories with Navrasa.</b></span>
+        <span class="fade-up">Get Free Consultation Call!</span>
+        <button id="toggle" data-modal-target="crud-modal" data-modal-toggle="crud-modal"
+            class="block text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center"
+            type="button">
+            Advisory call
+        </button>
+    </div>
+    <div class="sec2">
+        <div class="patch"></div>
+        <img src="Navrasa images/3.jpg" alt="photo" class="sec2_main">
+        <div class="metrics" data-aos="flip-up" data-aos-duration="1000">
+            <img src="/Assets/Flower3.svg" alt="flower" class="sec2_flower">
+            <div class="metric">
+                <div class="value">150+</div>
+                <div>Experienced Planners</div>
+            </div>
+            <div class="metric">
+                <div class="value">50+</div>
+                <div>Trusted Vendor Partnerships</div>
+            </div>
+            <div class="metric">
+                <div class="value">20+</div>
+                <div>Years of Collective Experience</div>
+            </div>
+            <img src="/Assets/Flower4.svg" alt="flower">
+        </div>
+    </div>
+    <div class="testimonials">
+        <div>
+            <img src="/Assets/Flowert.svg" alt="flower">
+            <img src="/Navrasa images/2.jpg" alt="reviewer's photo" data-aos="flip-up" data-aos-duration="1200">
+            <img src="/Assets/commas.svg" alt="commas">
+        </div>
+        <div>
+            <div>
+                <span data-aos="fade-down" data-aos-duration="1000">What our <span class="special">clients</span> say</span>
+                <span data-aos="fade-up" data-aos-duration="1000">
+                    "Working with Navrasa was a dream come true! From the initial consultation to the big day, their team
+                    was attentive to every detail. They truly understood my vision and made our wedding not only beautiful
+                    but also environmentally friendly. Our guests were amazed at how seamlessly everything came together. I
+                    can't thank Navrasa enough for making our day so special."
+                </span>
+            </div>
+            <div class="reviewerdetails" data-aos="fade-up" data-aos-duration="1000">
+                <span class="name">Emily Parker</span>
+                <span class="date">Wedding 09.05.2024</span>
+            </div>
+            <button id="toggle" data-modal-target="crud-modal" data-modal-toggle="crud-modal"
+                class="block text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center"
+                type="button">
+                Guidance call
+            </button>
+        </div>
+    </div>
+
+    <section class="bg-amber-50 py-20 services">
+        <h1 data-aos="fade-down" class="mx-10 md:mx-0 md:text-5xl text-3xl text-red-800 font-extrabold text-center mb-16">How it
+            works:
+            <small class="ms-2 font-bold text-gray-700 text-2xl">Book your wedding service in 3 easy
+                steps</small>
+        </h1>
+        <div class="flex md:flex-row flex-col justify-center items-center gap-10">
+            <div class="mx-5 transform transition-transform duration-300 hover:-translate-y-3 max-w-sm bg-white rounded-lg">
+                <a href="#">
+                    <img class="rounded-t-lg" src="Assets/1.jpg" alt="Consultation and Planning" />
+                </a>
+                <div class="p-5 flex flex-col justify-center items-center">
+                    <a href="#">
+                        <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900">Consultation and
+                            Planning</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 text-center">
+                        We begin with a detailed session to understand your preferences and visionary choices. Our team will
+                        develop a
+                        customised plan incorporating sustainable practices that meet your needs.
+                    </p>
+                </div>
+            </div>
+            <div class="mx-5 transform transition-transform duration-300 hover:-translate-y-3 max-w-sm bg-white rounded-lg">
+                <a href="#">
+                    <img class="rounded-t-lg" src="Assets/2.jpg" alt="Design and Coordination" />
+                </a>
+                <div class="p-5 flex flex-col justify-center items-center">
+                    <a href="#">
+                        <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900">Design and Coordination
+                        </h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 text-center">
+                        From selecting eco-friendly vendors to designing decor with a green focus, we take care of all the
+                        aspects of your wedding.
+                        Our coordination ensures every detail aligns with your vision and environmental goals.
+                    </p>
+                </div>
+            </div>
+            <div class="mx-5 transform transition-transform duration-300 hover:-translate-y-3 max-w-sm bg-white rounded-lg">
+                <a href="#">
+                    <img class="rounded-t-lg" src="Assets/3.jpg" alt="Execution and Celebration" />
+                </a>
+                <div class="p-5 flex flex-col justify-center items-center">
+                    <a href="#">
+                        <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900">Execution and
+                            Celebration</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700 text-center">
+                        We manage your special day's logistics to ensure a seamless and unforgettable event. Our commitment
+                        to sustainability comes first, leaving you and your visitors with great memories and a positive
+                        impact.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-amber-50 pb-20 services">
+        <h2 class="md:text-5xl text-3xl text-gray-800 font-bold text-center md:pt-20 md:mb-16 mb-5">Event Management Services</h2>
+        <div class="flex md:flex-row flex-col justify-center items-center gap-10">
+            <div
+                class="mx-5 transform transition-transform duration-300 hover:-translate-y-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                <a href="#">
+                    <img class="rounded-t-lg" src="/Navrasa images/4.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Wedding Event</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700">Crafting dream weddings that leave a
+                        lasting impression. We're the best at turning your vision into reality.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-800 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div
+                class="mx-5 transform transition-transform duration-300 hover:-translate-y-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                <a href="#">
+                    <img class="rounded-t-lg" src="Assets/1.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Corporate Event</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700">Delivering impactful corporate events
+                        with
+                        innovation and precision. We're the best choice for creating unforgettable
+                        corporate experiences</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-800 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div
+                class="mx-5 transform transition-transform duration-300 hover:-translate-y-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
+                <a href="#">
+                    <img class="rounded-t-lg" src="/Navrasa images/6.jpg" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Social Event or Gathering</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-700">Bringing creativity and expertise to
+                        every
+                        social occasion. Count on us for the best-in-class event experiences.</p>
+                    <a href="#"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-red-800 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300">
+                        Read more
+                        <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section
+        class="bg-red-100 md:mx-32 pb-20 md:my-20 rounded-2xl shadow-inner-2xl flex flex-col justify-center items-center better">
+        <h2 class="text-4xl font-bold text-center py-16 ">Why are we better?</h2>
+        <div class="flex md:flex-row flex-col justify-center items-center gap-6">
+            <div
+                class="mx-5 text-center flex flex-col justify-center items-center max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow ">
+                <img src="Assets/file (2).png" class="w-40 h-40">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Personalized
+                        Weddings</h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-500">Experience the joy of a wedding uniquely
+                    crafted for you.</p>
+            </div>
+            <div
+                class="mx-5 text-center flex flex-col justify-center items-center max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow ">
+                <img src="/Navrasa images/1.avif" class="w-40 h-40">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">Sustainable
+                        Harmony
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-500 ">Go to this step by step guideline process
+                    on
+                    how to
+                    certify for your weekly benefits:</p>
+            </div>
+            <div
+                class="mx-5 text-center flex flex-col justify-center items-center max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow ">
+                <img src="Assets/file (1).png" class="w-40 h-40">
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Expert
+                        Management
+                    </h5>
+                </a>
+                <p class="mb-3 font-normal text-gray-500 ">Go to this step by step guideline process
+                    on
+                    how to
+                    certify for your weekly benefits:</p>
+            </div>
+
+        </div>
+        <button data-modal-target="crud-modal" data-modal-toggle="crud-modal"
+            class="block text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            type="button">
+            Guidance call
+        </button>
+    </section>
+
+    <section class="md:mx-36 mx-5">
+        <h2 class="text-4xl font-bold text-center py-16 ">Frequently Asked Questions</h2>
+        <div id="accordion-color" data-accordion="collapse">
+            <h2 id="accordion-color-heading-1">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-800 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-red-200 hover:bg-red-100 gap-3"
+                    data-accordion-target="#accordion-color-body-1" aria-expanded="true"
+                    aria-controls="accordion-color-body-1">
+                    <span>Do you offer eco-friendly or sustainable wedding options?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+                <div class="p-5 border border-b-0 border-gray-200 ">
+                    <p class="mb-2 text-gray-500">Yes, we prioritize sustainable practices and can incorporate
+                        eco-friendly
+                        options into your wedding planning. From sourcing local, organic products to minimizing waste,
+                        we
+                        ensure your celebration is kind to the planet.</p>
+                </div>
+            </div>
+
+            <h2 id="accordion-color-heading-2">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-red-200 hover:bg-red-100 gap-3"
+                    data-accordion-target="#accordion-color-body-2" aria-expanded="false"
+                    aria-controls="accordion-color-body-2">
+                    <span>Can you provide digital or virtual elements for the wedding?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+                <div class="p-5 border border-b-0 border-gray-200">
+                    <p class="mb-2 text-gray-500">Absolutely! We offer tech collaborations that include digital
+                        invitations,
+                        virtual guest books, live streaming, and more. Our team can help integrate these elements to
+                        make
+                        your wedding experience seamless and modern.</p>
+                </div>
+            </div>
+
+            <h2 id="accordion-color-heading-3">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-red-200 hover:bg-red-100 gap-3"
+                    data-accordion-target="#accordion-color-body-3" aria-expanded="false"
+                    aria-controls="accordion-color-body-3">
+                    <span>What type of tech collaborations do you offer for wedding visualizations?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+                <div class="p-5 border border-t-0 border-gray-200 ">
+                    <p class="mb-2 text-gray-500">We partner with top tech companies to provide advanced visualizations,
+                        such as 3D venue walkthroughs, AR experiences, and interactive seating charts. This technology
+                        helps
+                        you visualize every detail before the big day.</p>
+                </div>
+            </div>
+
+            <h2 id="accordion-color-heading-4">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-red-200 hover:bg-red-100 gap-3"
+                    data-accordion-target="#accordion-color-body-4" aria-expanded="false"
+                    aria-controls="accordion-color-body-4">
+                    <span>Can you help with cultural or themed weddings?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+                <div class="p-5 border border-t-0 border-gray-200 ">
+                    <p class="mb-2 text-gray-500">Yes, our team is experienced in planning weddings that honor various
+                        cultural traditions and themes. Whether you want a traditional ceremony or a modern, themed
+                        celebration, we can customize every aspect to reflect your vision.</p>
+                </div>
+            </div>
+
+            <h2 id="accordion-color-heading-5">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-red-200 hover:bg-red-100 gap-3"
+                    data-accordion-target="#accordion-color-body-5" aria-expanded="false"
+                    aria-controls="accordion-color-body-5">
+                    <span>How do you ensure the quality of vendors and services?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
+                <div class="p-5 border border-t-0 border-gray-200">
+                    <p class="mb-2 text-gray-500">We have a rigorous vetting process for selecting vendors and service
+                        providers. Our partnerships are based on quality, reliability, and sustainability, ensuring you
+                        receive top-notch services.</p>
+                </div>
+            </div>
+
+            <h2 id="accordion-color-heading-6">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-red-200 hover:bg-red-100 gap-3"
+                    data-accordion-target="#accordion-color-body-6" aria-expanded="false"
+                    aria-controls="accordion-color-body-6">
+                    <span>What happens if we need to change the date or location of our wedding?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-6" class="hidden" aria-labelledby="accordion-color-heading-6">
+                <div class="p-5 border border-t-0 border-gray-200">
+                    <p class="mb-2 text-gray-500">We understand that plans can change. Our team is flexible and will
+                        work
+                        with you to adjust arrangements, subject to vendor availability. We strive to accommodate
+                        changes
+                        and minimize any additional costs.</p>
+                </div>
+            </div>
+
+            <h2 id="accordion-color-heading-7">
+                <button type="button"
+                    class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-red-200 hover:bg-red-100 gap-3"
+                    data-accordion-target="#accordion-color-body-7" aria-expanded="false"
+                    aria-controls="accordion-color-body-7">
+                    <span>Do you offer payment plans for your services?</span>
+                    <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M9 5 5 1 1 5" />
+                    </svg>
+                </button>
+            </h2>
+            <div id="accordion-color-body-7" class="hidden" aria-labelledby="accordion-color-heading-7">
+                <div class="p-5 border border-t-0 border-gray-200 ">
+                    <p class="mb-2 text-gray-500">Yes, we offer flexible payment plans to make budgeting easier for you.
+                        Our
+                        goal is to provide a stress-free experience, including the financial aspect of planning your
+                        wedding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="md:mx-20 mx-5 mb-20">
+        <h2 data-aos="fade-down" class="md:text-5xl text-3xl text-gray-800 font-bold text-center pt-28 md:mb-16 mb-5">Gallery
+        </h2>
+        <div class="grid gap-4">
+            <div data-aos="zoom-in">
+                <img class="h-auto w-[90vw] rounded-lg"
+                    src="Webseite-img/g-1.jpg" alt="">
+            </div>
+            <div class="grid grid-cols-5 gap-4">
+                <div data-aos="zoom-in" data-aos-duration="1000">
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="Webseite-img/g-2.jpg" alt="">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="1000">
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="Webseite-img/g-6.jpg" alt="">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="1000">
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="Webseite-img/g-3.jpg" alt="">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="1000">
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="Webseite-img/g-4.jpg" alt="">
+                </div>
+                <div data-aos="zoom-in" data-aos-duration="1000">
+                    <img class="h-auto max-w-full rounded-lg"
+                        src="Webseite-img/g-5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="sec8">
+    <div>
+        <img src="/Assets/Flower.svg" alt="flower" class="mb-4">
+        <span data-aos="fade-down" data-aos-duration="1000">
+            <span class="special">Looking</span> for Something best, Contact us
+        </span>
+        <form>
+            <div class="flex flex-col md:flex-row w-full space-y-4 md:space-y-0 md:space-x-4">
+                <input type="text" placeholder="Name" name="name" class="flex-1" required>
+                <input type="email" placeholder="Email" name="email" class="flex-1" required>
+                <input type="tel" placeholder="Phone" name="phone" class="flex-1" required>
+            </div>
+            <input type="text" placeholder="Subject" name="subject" class="w-full mt-4" required>
+            <textarea rows="7" placeholder="Message" name="message" class="w-full mt-4" required></textarea>
+            <button
+                class="block mt-4 text-white bg-red-800 hover:bg-red-900 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                type="button">
+                Submit
+            </button>
+        </form>
+    </div>
+</div>
+
+    <div class="sec9">
+        <h2 class="md:text-5xl text-2xl mx-10 mb-16 text-gray-700 font-bold text-center md:pt-28 md:mb-16 mb-5">Sample Wedding Proposal</h2>
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/Assets/mainphoto2.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/Assets/mainphoto2.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/Assets/mainphoto2.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/Assets/mainphoto2.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/Assets/mainphoto2.jpg"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white  rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white  rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </div>
+    <footer>
+        <footer class="bg-red-800">
+            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                <div class="md:flex md:justify-between">
+                    <div class="mb-6 md:mb-0">
+                        <a href="#" class="flex items-center">
+                            <img src="Assets/logo.png" class="h-8 me-3" alt="FlowBite Logo" />
+                            <span class="self-center text-2xl  font-bold whitespace-nowrap text-white">Navrasa</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                        <div>
+                            <h2 class="mb-6 text-sm font-bold text-white uppercase ">Links</h2>
+                            <ul class="text-white font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">About</a>
+                                </li>
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-bold text-white uppercase">Follow us</h2>
+                            <ul class="text-white  font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline ">Instagram</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">LinkedIn</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-bold text-white uppercase">Contact</h2>
+                            <ul class="text-white font-medium">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline">+91-5689826223</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">navrasa@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-6 border-white sm:mx-auto lg:my-8" />
+                <div class="text-center">
+                    <span class="text-sm text-white sm:text-center">© 2024 <a
+                            href="#" class="hover:underline">Navrasa</a>. All Rights Reserved.
+                    </span>
+                </div>
+            </div>
+        </footer>
+    
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
