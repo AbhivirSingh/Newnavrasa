@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <img src="/Navrasa image/5.jpg" alt="photo">
+    <img src="/Assets/bg.png" alt="photo">
     <header data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">
         <div>
             <img src="/Assets/logo.png" alt="logo">
@@ -125,16 +125,14 @@
                 <form class="p-4 md:p-5">
                     <div class="grid gap-4 mb-4 grid-cols-2">
                         <div class="col-span-2">
-                            <label for="name"
-                                class="block mb-2 text-sm font-medium text-gray-900 ">Name</label>
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 ">Name</label>
                             <input type="text" name="name" id="name"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  "
                                 placeholder="Your name" required="">
                         </div>
                         <div class="col-span-2 sm:col-span-1">
-                            <label for="price"
-                                class="block mb-2 text-sm font-medium text-gray-900">Eamil</label>
-                            <input type="text" name="price" 
+                            <label for="price" class="block mb-2 text-sm font-medium text-gray-900">Eamil</label>
+                            <input type="text" name="price"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
                                 placeholder="Email" required>
                         </div>
@@ -145,8 +143,7 @@
                                 placeholder="Phone" required>
                         </div>
                         <div class="col-span-2">
-                            <label for="description"
-                                class="block mb-2 text-sm font-medium text-gray-900">About your
+                            <label for="description" class="block mb-2 text-sm font-medium text-gray-900">About your
                                 Query</label>
                             <textarea id="description" rows="4"
                                 class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-red-500 focus:border-red-500"
@@ -202,32 +199,33 @@
             vision to life with personalized, tailor-made solutions.
         </span>
         <span class="fade-up"><b>Create unforgettable wedding memories with Navrasa.</b></span>
-        <span class="fade-up">Get Free Consultation Call!</span>
         <button id="toggle" data-modal-target="crud-modal" data-modal-toggle="crud-modal"
             class="block text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center"
-            type="button">
-            Advisory call
+            type="button">Get Free Consultation Call!
         </button>
     </div>
     <div class="sec2">
-        <div class="patch"></div>
-        <img src="Navrasa image/3.jpg" alt="photo" class="sec2_main">
         <div class="metrics" data-aos="flip-up" data-aos-duration="1000">
             <img src="/Assets/Flower3.svg" alt="flower" class="sec2_flower">
             <div class="metric">
-                <div class="value">150+</div>
+                <div class="value">50+</div>
                 <div>Experienced Planners</div>
             </div>
             <div class="metric">
-                <div class="value">50+</div>
+                <div class="value">70+</div>
                 <div>Trusted Vendor Partnerships</div>
             </div>
             <div class="metric">
-                <div class="value">20+</div>
-                <div>Years of Collective Experience</div>
+                <div class="value">100+</div>
+                <div>Events Planned</div>
             </div>
             <img src="/Assets/Flower4.svg" alt="flower">
         </div>
+    </div>
+    <div class="video-container">
+        <video id="video" width="100%" height="auto" loop autoplay>
+            <source src="Assets/video.mp4" type="video/mp4">
+        </video>
     </div>
     <div class="testimonials">
         <div>
@@ -237,11 +235,15 @@
         </div>
         <div>
             <div>
-                <span data-aos="fade-down" data-aos-duration="1000">What our <span class="special">clients</span> say</span>
+                <span data-aos="fade-down" data-aos-duration="1000">Hear From Our <span class="special">Happy
+                        Couples</span></span>
                 <span data-aos="fade-up" data-aos-duration="1000">
-                    "Working with Navrasa was a dream come true! From the initial consultation to the big day, their team
-                    was attentive to every detail. They truly understood my vision and made our wedding not only beautiful
-                    but also environmentally friendly. Our guests were amazed at how seamlessly everything came together. I
+                    "Working with Navrasa was a dream come true! From the initial consultation to the big day, their
+                    team
+                    was attentive to every detail. They truly understood my vision and made our wedding not only
+                    beautiful
+                    but also environmentally friendly. Our guests were amazed at how seamlessly everything came
+                    together. I
                     can't thank Navrasa enough for making our day so special."
                 </span>
             </div>
@@ -250,21 +252,23 @@
                 <span class="date">Wedding 09.05.2024</span>
             </div>
             <button id="toggle" data-modal-target="crud-modal" data-modal-toggle="crud-modal"
-                class="block text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center"
+                class="z-10 block text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-full text-sm px-5 py-2.5 text-center"
                 type="button">
-                Guidance call
+                Guidence call
             </button>
         </div>
     </div>
 
     <section class="bg-amber-50 py-20 services">
-        <h1 data-aos="fade-down" class="mx-10 md:mx-0 md:text-5xl text-3xl text-red-800 font-extrabold text-center mb-16">How it
+        <h1 data-aos="fade-down"
+            class="mx-10 md:mx-0 md:text-5xl text-3xl text-red-800 font-extrabold text-center mb-16">How it
             works:
             <small class="ms-2 font-bold text-gray-700 text-2xl">Book your wedding service in 3 easy
                 steps</small>
         </h1>
         <div class="flex md:flex-row flex-col justify-center items-center gap-10">
-            <div class="mx-5 transform transition-transform duration-300 hover:-translate-y-3 max-w-sm bg-white rounded-lg">
+            <div
+                class="mx-5 transform transition-transform duration-300 hover:-translate-y-3 max-w-sm bg-white rounded-lg border shadow-xl
                 <a href="#">
                     <img class="rounded-t-lg" src="Assets/1.jpg" alt="Consultation and Planning" />
                 </a>
@@ -274,29 +278,34 @@
                             Planning</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700 text-center">
-                        We begin with a detailed session to understand your preferences and visionary choices. Our team will
+                        We begin with a detailed session to understand your preferences and visionary choices. Our team
+                        will
                         develop a
                         customised plan incorporating sustainable practices that meet your needs.
                     </p>
                 </div>
             </div>
-            <div class="mx-5 transform transition-transform duration-300 hover:-translate-y-3 max-w-sm bg-white rounded-lg">
+            <div
+                class="mx-5 transform transition-transform duration-300 hover:-translate-y-3 max-w-sm bg-white rounded-lg border shadow-xl">
                 <a href="#">
                     <img class="rounded-t-lg" src="Assets/2.jpg" alt="Design and Coordination" />
                 </a>
                 <div class="p-5 flex flex-col justify-center items-center">
                     <a href="#">
-                        <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900">Design and Coordination
+                        <h5 class="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900">Design and
+                            Coordination
                         </h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700 text-center">
-                        From selecting eco-friendly vendors to designing decor with a green focus, we take care of all the
+                        From selecting eco-friendly vendors to designing decor with a green focus, we take care of all
+                        the
                         aspects of your wedding.
                         Our coordination ensures every detail aligns with your vision and environmental goals.
                     </p>
                 </div>
             </div>
-            <div class="mx-5 transform transition-transform duration-300 hover:-translate-y-3 max-w-sm bg-white rounded-lg">
+            <div
+                class="mx-5 transform transition-transform duration-300 hover:-translate-y-3 max-w-sm bg-white rounded-lg border shadow-xl">
                 <a href="#">
                     <img class="rounded-t-lg" src="Assets/3.jpg" alt="Execution and Celebration" />
                 </a>
@@ -306,7 +315,8 @@
                             Celebration</h5>
                     </a>
                     <p class="mb-3 font-normal text-gray-700 text-center">
-                        We manage your special day's logistics to ensure a seamless and unforgettable event. Our commitment
+                        We manage your special day's logistics to ensure a seamless and unforgettable event. Our
+                        commitment
                         to sustainability comes first, leaving you and your visitors with great memories and a positive
                         impact.
                     </p>
@@ -315,8 +325,84 @@
         </div>
     </section>
 
+    <div class="sec9">
+        <h2 class="md:text-5xl text-2xl mx-10 mb-16 text-gray-700 font-bold text-center md:pt-28 md:mb-16 mb-5">Sample
+            Wedding Proposal</h2>
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-60 overflow-hidden rounded-lg md:h-[80vh]">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/proposal/1.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/proposal/2.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/proposal/3.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/proposal/4.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="/proposal/5.png"
+                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                    data-carousel-slide-to="3"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                    data-carousel-slide-to="4"></button>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white  rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white  rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </div>
+
     <section class="bg-amber-50 pb-20 services">
-        <h2 class="md:text-5xl text-3xl text-gray-800 font-bold text-center md:pt-20 md:mb-16 mb-5">Event Management Services</h2>
+        <h2 class="md:text-5xl text-3xl text-gray-800 font-bold text-center md:pt-20 md:mb-16 mb-5">Event Management
+            Services</h2>
         <div class="flex md:flex-row flex-col justify-center items-center gap-10">
             <div
                 class="mx-5 transform transition-transform duration-300 hover:-translate-y-3 max-w-sm bg-white border border-gray-200 rounded-lg shadow">
@@ -391,7 +477,7 @@
         </div>
     </section>
     <section
-        class="bg-red-100 md:mx-32 pb-20 md:my-20 rounded-2xl shadow-inner-2xl flex flex-col justify-center items-center better">
+        class=" md:mx-32 pb-20 md:my-20 rounded-2xl shadow-inner-2xl flex flex-col justify-center items-center ">
         <h2 class="text-4xl font-bold text-center py-16 ">Why are we better?</h2>
         <div class="flex md:flex-row flex-col justify-center items-center gap-6">
             <div
@@ -433,9 +519,9 @@
 
         </div>
         <button data-modal-target="crud-modal" data-modal-toggle="crud-modal"
-            class="block text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            class="mt-10 block text-white bg-red-800 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
             type="button">
-            Guidance call
+            Contact us today
         </button>
     </section>
 
@@ -601,39 +687,34 @@
 
 
     <section class="md:mx-20 mx-5 mb-20">
-        <h2 data-aos="fade-down" class="md:text-5xl text-3xl text-gray-800 font-bold text-center pt-28 md:mb-16 mb-5">Gallery
+        <h2 data-aos="fade-down" class="md:text-5xl text-3xl text-gray-800 font-bold text-center pt-28 md:mb-16 mb-5">
+            Gallery
         </h2>
         <div class="grid gap-4">
             <div data-aos="zoom-in">
-                <img class="h-auto w-[90vw] rounded-lg"
-                    src="Webseite-im/g-1.jpg" alt="">
+                <img class="h-[90vh] w-[90vw] rounded-lg" src="Webseite-im/g-1.jpg" alt="">
             </div>
             <div class="grid grid-cols-5 gap-4">
                 <div data-aos="zoom-in" data-aos-duration="1000">
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="Webseite-im/g-2.jpg" alt="">
+                    <img class="h-full w-full rounded-lg" src="Webseite-im/g-2.jpg" alt="">
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="1000">
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="Webseite-im/g-6.jpg" alt="">
+                    <img class="h-full w-full rounded-lg" src="Webseite-im/g-6.jpg" alt="">
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="1000">
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="Webseite-im/g-3.jpg" alt="">
+                    <img class="h-full w-full rounded-lg" src="Webseite-im/g-3.jpg" alt="">
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="1000">
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="Webseite-im/g-4.jpg" alt="">
+                    <img class="h-full w-full rounded-lg" src="Webseite-im/g-4.jpg" alt="">
                 </div>
                 <div data-aos="zoom-in" data-aos-duration="1000">
-                    <img class="h-auto max-w-full rounded-lg"
-                        src="Webseite-im/g-5.jpg" alt="">
+                    <img class="h-auto w-full rounded-lg" src="Webseite-im/g-5.jpg" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-<div class="sec8">
+    <!-- <div class="sec8">
     <div>
         <img src="/Assets/Flower.svg" alt="flower" class="mb-4">
         <span data-aos="fade-down" data-aos-duration="1000">
@@ -654,83 +735,10 @@
             </button>
         </form>
     </div>
-</div>
+</div> -->
 
-    <div class="sec9">
-        <h2 class="md:text-5xl text-2xl mx-10 mb-16 text-gray-700 font-bold text-center md:pt-28 md:mb-16 mb-5">Sample Wedding Proposal</h2>
-        <div id="default-carousel" class="relative w-full" data-carousel="slide">
-            <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                <!-- Item 1 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/Assets/mainphoto2.jpg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 2 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/Assets/mainphoto2.jpg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 3 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/Assets/mainphoto2.jpg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 4 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/Assets/mainphoto2.jpg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-                <!-- Item 5 -->
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="/Assets/mainphoto2.jpg"
-                        class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                </div>
-            </div>
-            <!-- Slider indicators -->
-            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                    data-carousel-slide-to="0"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                    data-carousel-slide-to="1"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
-                    data-carousel-slide-to="2"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
-                    data-carousel-slide-to="3"></button>
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
-                    data-carousel-slide-to="4"></button>
-            </div>
-            <!-- Slider controls -->
-            <button type="button"
-                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-prev>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white  rtl:rotate-180" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M5 1 1 5l4 4" />
-                    </svg>
-                    <span class="sr-only">Previous</span>
-                </span>
-            </button>
-            <button type="button"
-                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-next>
-                <span
-                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30  group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
-                    <svg class="w-4 h-4 text-white  rtl:rotate-180" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m1 9 4-4-4-4" />
-                    </svg>
-                    <span class="sr-only">Next</span>
-                </span>
-            </button>
-        </div>
-    </div>
-    <footer>
-        <footer class="bg-red-800">
+
+        <footer>
             <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
@@ -780,13 +788,13 @@
                 </div>
                 <hr class="my-6 border-white sm:mx-auto lg:my-8" />
                 <div class="text-center">
-                    <span class="text-sm text-white sm:text-center">© 2024 <a
-                            href="#" class="hover:underline">Navrasa</a>. All Rights Reserved.
+                    <span class="text-sm text-white sm:text-center">© 2024 <a href="#"
+                            class="hover:underline">Navrasa</a>. All Rights Reserved.
                     </span>
                 </div>
             </div>
         </footer>
-    
+
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
