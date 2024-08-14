@@ -108,6 +108,65 @@ header ul li .active {
     height: 9.83vh;
 }
 
+#main-bg{
+    position: absolute;
+    height: 40vw;
+    width: 30vw;
+    right: 10vw;
+    top: 8vh;
+    border-radius: 1rem;
+    animation: initialSize 1.2s linear;
+}
+
+@keyframes initialSize {
+    from {
+        height: 100%;
+        width: 100%;
+        right: 0;
+        top: 0;
+        border-radius: 0;
+    }
+
+    to {
+        height: 40vw;
+        width: 30vw;
+        top: 8vh;
+        right: 10vw;
+        border-radius: 1rem;
+    }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 420px) {
+    #main-bg {
+        position: absolute;
+        height: 200px;
+        width: 180px;
+        right: 25vw;
+        top: 25rem;
+        border-radius: 1rem;
+        animation: resizeForSmallScreen 1.2s linear;
+    }
+
+    @keyframes resizeForSmallScreen {
+        from {
+            height: 100%;
+            width: 100%;
+            right: 0;
+            top: 0;
+            border-radius: 0;
+        }
+        to {
+            height: 200px;
+            width: 180px;
+            right: 25vw;
+            top: 25rem;
+        }
+    }
+}
+
+
+
 .intro {
     padding: 5rem 4.2vw;
     padding-left: 0;
@@ -146,11 +205,14 @@ header ul li .active {
 @media (max-width: 420px) {
     .intro {
         padding: 0rem 4.2vw;
+        text-align: center;
+        max-width: 95vw;
+        align-items: center;
     }
 
     .intro>div:nth-of-type(1) {
-        font-size: 5vw;
-        margin-top: 100px;
+        font-size: 25px;
+        margin-top: 200px;
     }
 
     .intro>div:nth-of-type(2) {
@@ -165,6 +227,7 @@ header ul li .active {
     .intro>div:nth-of-type(4) button {
         font-size: 4vw;
         padding: 0.5rem 1rem;
+        margin-top: 15rem;
     }
 
     #element {
@@ -184,7 +247,7 @@ header ul li .active {
     gap: 40px;
     color: #edf2f4;
     padding: 1rem 0;
-    background: linear-gradient(to right, #ffd8da, #8d0801, #4f000b, #8d0801, #fdd8db);
+    background: linear-gradient(to right, #b30900, #8d0801, #b30900);
 }
 
 @media (max-width: 420px) {
@@ -343,7 +406,6 @@ header ul li .active {
 .metric:last-of-type {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
 }
 
 @media (max-width: 420px) {
