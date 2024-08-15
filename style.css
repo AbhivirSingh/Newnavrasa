@@ -187,9 +187,9 @@ header ul li .active {
 }
 
 .intro>div:nth-of-type(2) {
-    font-family: 'Roboto Serif', sans-serif;
+    font-family: 'Great Vibes', sans-serif;
     font-size: 2.0833vw;
-    margin-top: 3rem;
+    margin: 3rem 0 1.5rem;
     color: #343A40;
 }
 
@@ -247,7 +247,7 @@ header ul li .active {
     gap: 40px;
     color: #edf2f4;
     padding: 1rem 0;
-    background: linear-gradient(to right, #b30900, #8d0801, #b30900);
+    background: linear-gradient(to right, #f5a6a2, #8d0801, #f5a6a2);
 }
 
 @media (max-width: 420px) {

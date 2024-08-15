@@ -1,7 +1,7 @@
 // Dynamic typing animation
 
 var typed = new Typed('#element', {
-    strings: ['Experiences ', 'Precision'],
+    strings: ['Experiences ', 'Precision','Seamless Planning'],
     typeSpeed: 50,
     loop: true,
     loopCount: Infinity,
@@ -65,3 +65,16 @@ window.addEventListener('scroll', function () {
         video.style.height = `${percentage * 100}vh`;
     }
 });
+
+
+// Gallery
+
+let gphotos=document.querySelectorAll('.gphotos>div:last-child>div');
+gphotos.forEach(function(gphoto){
+    gphoto.addEventListener('click',function(){
+        let temp=gphoto.querySelector('img').getAttribute('src');
+        gphoto.querySelector('img').setAttribute('src',gphoto.parentElement.parentElement.querySelector('img').getAttribute('src'));
+        gphoto.parentElement.parentElement.querySelector('img').setAttribute('src',temp);
+    });
+}
+);
